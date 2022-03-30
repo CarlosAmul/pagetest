@@ -18,9 +18,9 @@ const sidebarConfig = [
   {
     subheader: 'general v3.2.0',
     items: [
-      { title: 'One', path: '/dashboard/one', icon: ICONS.dashboard },
-      { title: 'Two', path: '/dashboard/two', icon: ICONS.ecommerce },
-      { title: 'Three', path: '/dashboard/three', icon: ICONS.analytics },
+      { title: 'One', path: '/pagetest/one', icon: ICONS.dashboard },
+      { title: 'Two', path: '/pagetest/two', icon: ICONS.ecommerce },
+      { title: 'Three', path: '/pagetest/three', icon: ICONS.analytics },
     ],
   },
 
@@ -31,12 +31,12 @@ const sidebarConfig = [
     items: [
       {
         title: 'user',
-        path: '/dashboard/user',
+        path: '/pagetest/user',
         icon: ICONS.user,
         children: [
-          { title: 'Four', path: '/dashboard/user/four' },
-          { title: 'Five', path: '/dashboard/user/five' },
-          { title: 'Six', path: '/dashboard/user/six' },
+          { title: 'Four', path: '/pagetest/user/four' },
+          { title: 'Five', path: '/pagetest/user/five' },
+          { title: 'Six', path: '/pagetest/user/six' },
         ],
       },
     ],
