@@ -3,6 +3,9 @@ name: Delivery
 on:
   push:
     branches: [ other ]
+  pull_request:
+    types:
+      - opened
 
 jobs:
   build:
