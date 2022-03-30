@@ -23,13 +23,13 @@ export default function Router() {
   return useRoutes([
     {
       path: '/',
-      element: <Navigate to="/dashboard/one" replace />,
+      element: <Navigate to="/" replace />,
     },
     {
       path: '/dashboard',
       element: <DashboardLayout />,
       children: [
-        { element: <Navigate to="/dashboard/one" replace />, index: true },
+        { element: <Navigate to="/" replace />, index: true },
         { path: 'one', element: <PageOne /> },
         { path: 'two', element: <PageTwo /> },
         { path: 'three', element: <PageThree /> },
