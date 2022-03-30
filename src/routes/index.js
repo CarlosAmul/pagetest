@@ -23,7 +23,7 @@ export default function Router() {
   return useRoutes([
     {
       path: '/',
-      element: <Navigate to="/pagetest/one" replace />,
+      element: <Navigate to="/pagetest" replace />,
     },
     {
       path: '/pagetest',
