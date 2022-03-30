@@ -22,7 +22,7 @@ const Loadable = (Component) => (props) => {
 export default function Router() {
   return useRoutes([
     {
-      path: '/',
+      path: '/pagetest',
       element: <Navigate to="/pagetest/one" replace />,
     },
     {
