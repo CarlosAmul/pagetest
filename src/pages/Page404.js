@@ -13,7 +13,7 @@ import { PageNotFoundIllustration } from '../assets';
 
 const RootStyle = styled('div')(({ theme }) => ({
   display: 'flex',
-  height: '100%',
+  minHeight: '100%',
   alignItems: 'center',
   paddingTop: theme.spacing(15),
   paddingBottom: theme.spacing(10),
@@ -41,7 +41,7 @@ export default function Page404() {
               <PageNotFoundIllustration sx={{ height: 260, my: { xs: 5, sm: 10 } }} />
             </m.div>
 
-            <Button to="/" size="large" variant="contained" component={RouterLink}>
+            <Button to="/pagetest" size="large" variant="contained" component={RouterLink}>
               Go to Home
             </Button>
           </Box>
