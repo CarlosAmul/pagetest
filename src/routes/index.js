@@ -13,7 +13,7 @@ const Loadable = (Component) => (props) => {
   const { pathname } = useLocation();
 
   return (
-    <Suspense fallback={<LoadingScreen isDashboard={pathname.includes('/pagetest')} />}>
+    <Suspense fallback={<LoadingScreen isDashboard={pathname.includes('/')} />}>
       <Component {...props} />
     </Suspense>
   );
@@ -22,21 +22,21 @@ const Loadable = (Component) => (props) => {
 export default function Router() {
   return useRoutes([
     {
-      path: '/pagetest',
-      element: <Navigate to="/pagetest/one" replace />,
+      path: '/',
+      element: <Navigate to="/one" replace />,
     },
     {
-      path: '/pagetest',
+      path: '/',
       element: <DashboardLayout />,
       children: [
-        { element: <Navigate to="/pagetest/one" replace />, index: true },
-        { path: 'one', element: <PageOne /> },
+        { element: <Navigate to="/" replace />, index: true },
+        { path: '', element: <PageOne /> },
         { path: 'two', element: <PageTwo /> },
         { path: 'three', element: <PageThree /> },
         {
           path: 'user',
           children: [
-            { element: <Navigate to="/pagetest/user/four" replace />, index: true },
+            { element: <Navigate to="/user/four" replace />, index: true },
             { path: 'four', element: <PageFour /> },
             { path: 'five', element: <PageFive /> },
             { path: 'six', element: <PageSix /> },
