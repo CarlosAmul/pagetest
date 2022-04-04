@@ -1,10 +1,6 @@
 name: Linting and Unit Testing
 
-on: 
-  push:
-  pull_request:
-    types:
-      - opened
+on: push
 
 jobs:
   build:
