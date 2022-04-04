@@ -1,11 +1,6 @@
 name: Delivery 
 
-on:
-  push:
-    branches: [ other ]
-  pull_request:
-    types:
-      - opened
+on: push
 
 jobs:
   build:
