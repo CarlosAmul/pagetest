@@ -3,5 +3,3 @@ describe("Addition", () => {
         expect(2+2).toEqual(4);
     })
 })
-
-//another test
