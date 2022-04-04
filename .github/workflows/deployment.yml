@@ -1,8 +1,6 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     types:
       - closed
@@ -27,6 +25,9 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+
+    - name: Run the tests and generate coverage report
+      run: npm test -- --coverage
 
     - name: Build
       run: npm run build
