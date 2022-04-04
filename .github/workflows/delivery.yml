@@ -1,6 +1,10 @@
-name: Push Workflow
+name: Linting and Unit Testing
 
-on: push
+on: 
+  push:
+  pull_request:
+    types:
+      - opened
 
 jobs:
   build:
