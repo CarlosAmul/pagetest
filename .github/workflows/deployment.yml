@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -30,6 +29,13 @@ jobs:
 
     - name: Build
       run: npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.5
