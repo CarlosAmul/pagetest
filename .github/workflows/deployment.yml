@@ -1,14 +1,13 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     types:
       - closed
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     strategy:
@@ -27,15 +26,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Run the tests and generate coverage report
+      run: npm test -- --coverage
+
     - name: Build
       run: npm run build
-
-  deploy:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.5
