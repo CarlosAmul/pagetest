@@ -17,7 +17,7 @@ export default function PageOne() {
           Page One
         </Typography>
         <Typography gutterBottom>
-          BLESS THE LORD O MY SOUL
+          TENKAI WO KIRAI AREHATETA KONOYO WO
         </Typography>
         <Typography>
           Praesent ac sem eget est egestas volutpat. Phasellus viverra nulla ut metus varius laoreet. Curabitur
