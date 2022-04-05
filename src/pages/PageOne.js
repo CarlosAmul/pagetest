@@ -17,7 +17,7 @@ export default function PageOne() {
           Page One
         </Typography>
         <Typography gutterBottom>
-          ahshaahhahasdiasduasd
+          HELLO WORLD
         </Typography>
         <Typography>
           Praesent ac sem eget est egestas volutpat. Phasellus viverra nulla ut metus varius laoreet. Curabitur
