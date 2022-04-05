@@ -2,6 +2,8 @@ name: Linting and Unit Testing
 
 on: 
   push:
+    branches-ignore:
+      - main
   pull_request:
     types:
       - opened
